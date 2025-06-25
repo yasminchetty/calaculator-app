@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 20px;
+}
+
+body.light {
+    background: linear-gradient(to right, #f9fbff, #e6ecf5);
+    color: #333;
+}
+
+body.dark {
+    background: linear-gradient(to right, #1a1d23, #262a31);
+    color: #f0f0f0;
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 320px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+body.dark table {
+    background-color: rgba(30, 33, 41, 0.8);
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 24px;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: rgba(240, 240, 240, 0.9);
+    color: #222;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark input[type="text"] {
+    background-color: rgba(20, 20, 20, 0.6);
+    color: #fff;
+}
+
+td {
+    padding: 18px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #e0e7ef;
+    color: #000;
+    transition: background 0.2s, transform 0.1s;
+    user-select: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+td:hover {
+    transform: scale(1.05);
+}
+
+.operator {
+    background: linear-gradient(to right, #57b7ff, #4285f4);
+    color: white;
+    font-weight: bold;
+}
+
+.clear {
+    background: linear-gradient(to right, #ff6f61, #ff4e50);
+    color: white;
+}
+
+.equals {
+    background: linear-gradient(to right, #00c9a7, #12cbc4);
+    color: white;
+    font-weight: bold;
+}
+
+body.dark td {
+    background-color: #3a3d44;
+    color: #eee;
+}
+
+body.dark .operator {
+    background: linear-gradient(to right, #4d79ff, #3457d5);
+}
+
+body.dark .clear {
+    background: linear-gradient(to right, #ff4e50, #c13535);
+}
+
+body.dark .equals {
+    background: linear-gradient(to right, #0aa79d, #0b9e8c);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: linear-gradient(to right, #7aa2f7, #3e68d1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #5a8ce1, #2e56b2);
+}
+
+body.dark button {
+    background: linear-gradient(to right, #4e5d88, #2c3a65);
+}
